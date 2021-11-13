@@ -1,0 +1,93 @@
+* {
+    cursor: default;
+}
+
+body {
+    background-color: #92B386;
+}
+
+h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-family: 'Shadows Into Light', cursive;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+h3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    transform: translate(0px, 375px);
+    animation-name: example;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+footer {
+    position: fixed;
+    left: 50;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    bottom: -5px !important;
+}
+
+#middle {
+    color: blue;
+}
+
+#duck {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    height: 300px;
+    width: 400px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 11;
+}
+
+@media only screen and (max-width: 600px) {
+    #duck {
+        height: 200px;
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 60px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    h3 {
+        transform: translate(0px, 275px);
+        font-size: 30px;
+    }
+}
+
+@keyframes example {
+   /*0%   {color:red;}
+    25%  {color:orange;}
+    50%  {color:yellow;}
+    75%  {color:green;}
+    100% {color:blue;}*/
+    0% {color: pink;}
+    25% {color: hotpink;}
+    50% {color: green;}
+    75% {color: rgb(207, 7, 207);}
+    100% {color:pink;}
+}
